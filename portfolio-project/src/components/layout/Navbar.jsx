@@ -25,8 +25,8 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-500 ease-in-out px-6 ${isScrolled ? 'py-4' : 'py-8'
       }`}>
       <div className={`mx-auto transition-all duration-500 ease-out ${isScrolled
-          ? 'max-w-3xl bg-black/40 backdrop-blur-xl border border-primary/20 rounded-2xl px-6 py-2 shadow-[0_10px_40px_rgba(0,0,0,0.8)]'
-          : 'max-w-7xl bg-transparent px-0 border-transparent'
+        ? 'max-w-3xl bg-black/40 backdrop-blur-xl border border-primary/20 rounded-2xl px-6 py-2 shadow-[0_10px_40px_rgba(0,0,0,0.8)]'
+        : 'max-w-7xl bg-transparent px-0 border-transparent'
         }`}>
         <div className='flex items-center justify-between'>
 
@@ -48,8 +48,8 @@ const Navbar = () => {
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
                 className={`relative px-4 py-2 text-[11px] font-mono uppercase tracking-widest transition-all duration-300 rounded-lg ${activeSection === link.id
-                    ? 'text-primary'
-                    : 'text-white/50 hover:text-white'
+                  ? 'text-primary'
+                  : 'text-white/50 hover:text-white'
                   }`}
               >
                 {link.label}
@@ -65,8 +65,8 @@ const Navbar = () => {
             <button
               onClick={() => handleNavClick('contact')}
               className={`flex items-center gap-2 px-5 py-2 text-[10px] font-bold rounded-lg transition-all duration-500 group border ${isScrolled
-                  ? 'bg-primary text-black border-primary hover:bg-transparent hover:text-primary'
-                  : 'bg-transparent text-white border-white/20 hover:border-primary hover:text-primary'
+                ? 'bg-primary text-black border-primary hover:bg-transparent hover:text-primary'
+                : 'bg-transparent text-white border-white/20 hover:border-primary hover:text-primary'
                 }`}
             >
               HIRE_ME
@@ -94,8 +94,8 @@ const Navbar = () => {
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
                 className={`flex items-center justify-between w-full px-4 py-4 rounded-xl text-sm font-mono uppercase tracking-widest transition-all ${activeSection === link.id
-                    ? 'bg-primary/10 text-primary border-l-2 border-primary'
-                    : 'text-white/60 hover:bg-white/5'
+                  ? 'bg-primary/10 text-primary border-l-2 border-primary'
+                  : 'text-white/60 hover:bg-white/5'
                   }`}
               >
                 {link.label}
